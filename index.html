@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="table">
+      <div class="table__header">
+        <div class="table__header__search-bar">
+          <img src="./images/Icon.svg" alt="" />
+          <input
+            class="search-bar__input"
+            type="text"
+            placeholder="Начните вводить слово"
+          />
+        </div>
+        <div class="table__header__date-picker" id="daterange">
+          <img src="./images/calendar_month.svg" alt="calendar" width="24" />
+          <span>01.10.2024 - 01.11.2024</span>
+          <span class="arrow">&#9662;</span>
+        </div>
+        <button>Настройки</button>
+      </div>
+
+      <div class="grid-container">
+        <!-- Headers -->
+        <div class="header">Ключевые слова</div>
+        <div class="header">Позиция</div>
+        <div class="header">Клики</div>
+        <div class="header">CTR</div>
+        <div class="header">Показы</div>
+        <div class="header">Спрос</div>
+        <div class="header">01.10.2024 (пн)</div>
+        <div class="header">02.10.2024 (вт)</div>
+        <div class="header">03.10.2024 (ср)</div>
+
+        <!-- Row 1 -->
+        <div class="cell">кресло</div>
+        <div class="cell">15.5</div>
+        <div class="cell">14500</div>
+        <div class="cell">20.01%</div>
+        <div class="cell">14500</div>
+        <div class="cell">Нет данных</div>
+        <div class="cell highlight-green">16.3 <span>▲</span></div>
+        <div class="cell highlight-red">46.9 <span>▼</span></div>
+        <div class="cell highlight-green">16.3 <span>▲</span></div>
+
+        <!-- Row 2 -->
+        <div class="cell">кресло компьютерное</div>
+        <div class="cell">25.5</div>
+        <div class="cell">14500</div>
+        <div class="cell">20.01%</div>
+        <div class="cell">14500</div>
+        <div class="cell">Нет данных</div>
+        <div class="cell highlight-red">46.9 <span>▼</span></div>
+        <div class="cell">Нет данных</div>
+        <div class="cell highlight-blue">8 <span>▲</span></div>
+
+        <!-- Row 3 -->
+        <div class="cell">кресло кожаное</div>
+        <div class="cell">35.5</div>
+        <div class="cell">14500</div>
+        <div class="cell">20.01%</div>
+        <div class="cell">14500</div>
+        <div class="cell">Нет данных</div>
+        <div class="cell highlight-blue">8 <span>▲</span></div>
+        <div class="cell highlight-green">16.3 <span>▲</span></div>
+        <div class="cell highlight-green">16.3 <span>▲</span></div>
+      </div>
+
+      <div class="pagination">
+        <span>Страница 1 из 5</span>
+        <select>
+          <option>50</option>
+        </select>
+      </div>
+    </div>
+  </body>
+</html>

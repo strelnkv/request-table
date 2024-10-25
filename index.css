@@ -1,0 +1,106 @@
+@font-face {
+  font-family: "PT Root UI";
+  src: url("./fonts/pt-root-ui_regular.woff2") format("woff2"),
+    url("./fonts/pt-root-ui_regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Root UI";
+  src: url("./fonts/pt-root-ui_bold.woff2") format("woff2"),
+    url("./fonts/pt-root-ui_bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Root UI";
+  src: url("./fonts/pt-root-ui_light.woff2") format("woff2"),
+    url("./fonts/pt-root-ui_light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Root UI";
+  src: url("./fonts/pt-root-ui_medium.woff2") format("woff2"),
+    url("./fonts/pt-root-ui_medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-family: "PT Root UI", sans-serif;
+  margin: 20px;
+  background-color: #f7f7f7;
+}
+
+.table {
+  width: 1444px;
+}
+
+.table__header {
+  background-color: white;
+  padding: 16px;
+  border: 1px solid #e5e5ea;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.table__header__search-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 1px solid #e5e5ea;
+  padding-left: 18px;
+  padding-right: 5px;
+  border-radius: 5px;
+  height: 32px;
+  width: 220px;
+}
+
+.search-bar__input {
+  border: none;
+  outline: none;
+  background-color: transparent;
+  flex: 1;
+}
+
+.search-bar__input::placeholder {
+  color: #bbbbbb;
+  font-family: "PT Root UI";
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.grid-container {
+  padding-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  gap: 8px;
+  background-color: #f4f4f4;
+}
+.header,
+.cell {
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+.highlight-green {
+  background-color: #e0f3e0;
+}
+.highlight-red {
+  background-color: #f3e0e0;
+}
+.highlight-blue {
+  background-color: #e0e4f3;
+}
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
